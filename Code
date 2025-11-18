@@ -1,0 +1,62 @@
+import hashlib
+from blake3 import blake3
+from argon2 import PasswordHasher
+
+print('O hashcript é um sistema que consegue criar hashs de qualquer informação que o user colocar')
+
+print('''
+            1: SHA-256 >
+            A mais usada hoje em segurança, blockchain (Bitcoin), integridade de arquivos.
+            ------------------------    
+
+            2: SHA-3 (Keccak)
+            Evolução mais nova da família SHA.
+
+            3: BLAKE3
+            Muito rápida, moderna e segura.
+
+            4: SHA512
+            Hash de 512 bits muito forte.
+
+            5: Argon2
+            Melhor para proteger senhas.
+''')
+
+menu = int(input('Qual das opções acima deseja: '))
+
+match menu:
+    case 1:
+        print('\n[ SHA-256 ]')
+        info = input('Digite a mensagem que deseja criar Hash: ')
+        h = hashlib.sha256(info.encode('utf-8')).hexdigest()
+        print("HASH:", h)
+
+    case 2:
+        print('\n[ SHA-3 ]')
+        info = input('Digite a mensagem que deseja criar Hash: ')
+        h = hashlib.sha3_256(info.encode('utf-8')).hexdigest()
+        print("HASH:", h)
+
+    case 3:
+        print('\n[ BLAKE3 ]')
+        info = input('Digite a mensagem que deseja criar Hash: ')
+        h = blake3(info.encode('utf-8')).hexdigest()
+        print("HASH:", h)
+
+    case 4:
+        print('\n[ SHA512 ]')
+        info = input('Digite a mensagem que deseja criar Hash: ')
+        h = hashlib.sha512(info.encode('utf-8')).hexdigest()
+        print("HASH:", h)
+
+    case 5:
+        print('\n[ ARGON2 – recomendado para senhas ]')
+        info = input('Digite a senha para gerar o hash seguro: ')
+        ph = PasswordHasher()
+        h = ph.hash(info)
+        print("HASH:", h)
+
+    case _:
+        print("Opção inválida!")
+
+print('By MathprataScientist:: ')
