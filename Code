@@ -2,7 +2,7 @@ import hashlib
 from blake3 import blake3
 from argon2 import PasswordHasher
 
-print('O hashcript é um sistema que consegue criar hashs de qualquer informação que o user colocar')
+print('O hashbank é um sistema que consegue criar hashs de qualquer informação que o user colocar')
 
 print('''
             1: SHA-256 >
