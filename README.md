@@ -14,7 +14,7 @@ O script permite escolher entre os seguintes algoritmos de hash:
 5: Argon2: Altamente recomendado para o armazenamento seguro de senhas, devido à sua resistência contra ataques de força bruta e dicionário.
 
 # Pré-requisitos
-Para executar o Hashcript, você precisará ter o Python instalado e as seguintes bibliotecas Python:
+Para executar o Hashbank, você precisará ter o Python instalado e as seguintes bibliotecas Python:
 
 blake3
 
@@ -28,13 +28,13 @@ Bash
 pip install blake3 argon2-cffi
 
 # Como Usar
-Salve o código em um arquivo Python (ex: hashcript.py).
+Salve o código em um arquivo Python (ex: hashbank.py).
 
 Execute o script no terminal:
 
 Bash
 
-python hashcript.py
+python hashbank.py
 O script exibirá um menu com as opções de algoritmos de hash.
 
 Digite o número da opção desejada (1 a 5) e pressione Enter.
