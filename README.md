@@ -1,5 +1,5 @@
 # Hashbank-Gerador-Multi-Algoritmo-de-Hash
-O Hashcript é um script Python simples e interativo projetado para gerar hashes criptográficos de diferentes tipos a partir de uma entrada fornecida pelo usuário. Ele oferece uma seleção de algoritmos de hash populares e modernos para diversas finalidades, como integridade de dados, segurança em blockchain e proteção de senhas. 
+O Hashbank é um script Python simples e interativo projetado para gerar hashes criptográficos de diferentes tipos a partir de uma entrada fornecida pelo usuário. Ele oferece uma seleção de algoritmos de hash populares e modernos para diversas finalidades, como integridade de dados, segurança em blockchain e proteção de senhas. 
 # Funcionalidades
 O script permite escolher entre os seguintes algoritmos de hash:
 
